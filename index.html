@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+	
+	body {
+	background-image: url("assets/pattern-background-desktop.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: hsl(225, 100%, 94%)
+	}
+	
+	h1 {
+	font-family: 'Red Hat Display', sans-serif;
+	color: hsl(223, 47%, 23%);
+	font-weight: 900;
+	}
+	
+	h2 {
+	font-family: 'Red Hat Display', sans-serif;
+	color: hsl(223, 47%, 23%);
+	font-weight: 900;
+	}
+	
+	p {
+	font-size: 16px;
+	font-weight: 500;
+	font-family: 'Red Hat Display', sans-serif;
+	color: hsl(224, 23%, 55%);	font-size: 16px;
+	}
+	
+	.main {
+        top: 25%;
+        left: 47%;
+        width: 30%;
+        height: 75%;
+        margin-top: -9em;
+        margin-left: -15em;
+        border: 0px solid;
+        background-color: white;
+        position: fixed;
+		border-radius: 25px;
+	}
+	
+	.textlimit {
+        top: 60%;
+        left: 50%;
+        width: 24%;
+        height: 25%;
+        margin-top: -9em;
+        margin-left: -15em;
+        border: 0px solid;
+        background-color: white;
+        position: fixed;
+		border-radius: 25px;
+	}
+	
+	.price {
+        top: 70%;
+        left: 50%;
+        width: 24%;
+        height: 12%;
+        margin-top: -9em;
+        margin-left: -15em;
+        border: 0px solid;
+        background-color: hsl(225, 100%, 98%);
+        position: fixed;
+		border-radius: 10px;
+	}
+	
+	.price1 {
+        top: 73%;
+        left: 50%;
+        width: 6%;
+        height: 12%;
+        margin-top: -9em;
+        margin-left: -15em;
+        border: 0px solid;
+        background-color: rgba(0, 0, 0, 0);
+        position: fixed;
+		border-radius: 10px;
+	}
+	
+	.price2 {
+        top: 70%;
+        left: 54%;
+        width: 11%;
+        height: 12%;
+        margin-top: -9em;
+        margin-left: -15em;
+        border: 0px solid;
+        background-color: rgba(0, 0, 0, 0);
+        position: fixed;
+		border-radius: 10px;
+	}
+	
+	.price3 {
+        top: 75%;
+        left: 66%;
+        width: 11%;
+        height: 12%;
+        margin-top: -9em;
+        margin-left: -15em;
+        border: 0px solid;
+        background-color: rgba(0, 0, 0, 0);
+        position: fixed;
+		border-radius: 10px;
+	}
+	
+	.price3change {
+		font-size: 16px;
+		font-weight: 700;
+		font-family: 'Red Hat Display', sans-serif;
+		color: hsl(245, 75%, 52%);
+		font-size: 16px;
+	}
+	
+	.price3change:hover {
+		text-decoration: none;
+	}
+	
+	.clickablebutton1 {
+        top: 85%;
+        left: 50%;
+        width: 24%;
+        height: 6%;
+        margin-top: -9em;
+        margin-left: -15em;
+        border: 0px solid;
+        background-color: hsl(245, 75%, 52%);
+        position: fixed;
+		border-radius: 10px;
+		font-size: 16px;
+		font-weight: 700;
+		font-family: 'Red Hat Display', sans-serif;
+		color: white;
+	}
+	
+	.clickablebutton1:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	
+	.clickablebutton2 {
+        top: 93%;
+        left: 50%;
+        width: 24%;
+        height: 6%;
+        margin-top: -9em;
+        margin-left: -15em;
+        border: 0px solid;
+        background-color: rgba(0, 0, 0, 0);
+        position: fixed;
+		border-radius: 10px;
+		font-size: 16px;
+		font-weight: 700;
+		font-family: 'Red Hat Display', sans-serif;
+		color: hsl(224, 23%, 55%);
+	}
+	
+	.clickablebutton2:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	
+	
+	.element1 {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	}
+  </style>
+</head>
+<body>
+
+	<center>
+	<div class="main">
+	
+	<img class="element1" src="assets/illustration-hero.svg" alt="Girl listening to music" width="100%" height="35%">
+	<br> </br>
+	<h1>Order Summary</h1>
+	
+	</div>
+	
+	<div class="textlimit">
+	
+	<p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+	device anywhere you like!</p>
+	
+	</div>
+	
+	<div class="price"></div>
+	<div class="price1">
+	<img class="musicicon" src="assets/icon-music.svg" alt="Music Icon" width="50%" height="50%">
+	</div>
+	
+	<div class="price2">
+	<h2>Annual Plan</h2>
+	<h2 style="font-weight: 500;">$59.99/year</h2>
+	</div>
+	
+	<div class="price3">
+	<a class="price3change" href="#">Change</a>
+	</div>
+	
+	<button type="submit" class="clickablebutton1" onclick="window.location.href='#'">Proceed to Payment</button>
+	<button type="submit" class="clickablebutton2" onclick="window.location.href='#'">Cancel Order</button>
+	</center>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">op</a>.
+  </div>
+</body>
+</html>
